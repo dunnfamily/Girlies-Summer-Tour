@@ -471,7 +471,7 @@ function loadState() {
 
 function daysUntilAug31() {
   const now = new Date();
-  let target = new Date(now.getFullYear(), 7, 31, 23, 59, 59);
+  let target = new Date(now.getFullYear(), 6, 27, 23, 59, 59);
   if (now > target) target = new Date(now.getFullYear() + 1, 7, 31, 23, 59, 59);
   return Math.max(0, Math.ceil((target - now) / 86400000));
 }
